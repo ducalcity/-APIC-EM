@@ -76,7 +76,7 @@ def mytrace():
             # verified by user.
             break  # Exit loop if values supplied
         else:
-            print("\n\nYOU MUST ENTER IP ADDRESSES TO CONTINUE.\nUSE CTRL-C TO QUIT\n")
+            print("\n\nDEBE INTRODUCIR UNA IP.\nUSE CTRL-C PARA SALIR\n")
             continue  # Return to beginning of loop and repeat
 
     #============================
@@ -180,15 +180,15 @@ def mytrace():
         device_no += 1  # increments the ordinal variable for the device in the list
 
     # print the source and destination IPs for the trace
-    print("Path trace: \n Source: ", path_source, "\n Destination: ", path_dest)  
+    print("Traza: \n IP Origen: ", path_source, "\n IP Destino: ", path_dest)  
     # print the table of devices in the path trace
     print("List of devices on path:")
     table_header = [
                     "Item",
-                    "Name",
+                    "Nombre",
                     "IP",
-                    "Ingress Int",
-                    "Egress Int"
+                    "Int entrada",
+                    "Int salida"
                    ]
     print( tabulate(all_devices, table_header) )
     return (table_header)

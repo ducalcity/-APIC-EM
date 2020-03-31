@@ -8,9 +8,9 @@ while ((operacion != "S") and (operacion != "s")):
     operacion=str(input("\
 \n\
     Pulse 1 para listar los dispositivos de red\n\
-    Pulse 2 para listar los equpos finales\n\
+    Pulse 2 para listar los equipos finales\n\
     Pulse 3 para realizar una traza\n\
-    Pulse 4 para división \n\
+    Pulse 4 para listar los flujos \n\
     Pulse S para salir \n\n\
     Seleccione operación: "))
     print("\n")
@@ -31,7 +31,9 @@ while ((operacion != "S") and (operacion != "s")):
         print("\n","*"*80)
         
     elif (operacion == "4"):
-        print("\nSe ha solicitado salida de la aplicación")
+        print("Este es el listado de los flujos:\n")
+        my_apic_em_functions.print_flows()
+        print("\n","*"*80)
         
     elif (operacion == ("s" or "S")):
         print("\nSe ha solicitado salida de la aplicación")
